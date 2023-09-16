@@ -12,8 +12,37 @@ export const AllUsers = () => {
     return (
         <>
             <section>
-                <article>
-                    <div className="max-w-md border border-sky-500 rounded-full w-2/4 text-center text-lg m-auto">
+                <article className="max-w-8xl mx-auto px-4">
+                    <div className="border border-sky-500 rounded-full text-center text-lg my-3 md:w-2/4 md:m-auto lg:p-3 lg:w-2/6">
+                        <h1>Lista de usuarios</h1>
+                    </div>
+                    <div className="md:grid md:grid-cols-2 md:gap-2 md:my-5 lg:grid-cols-3">
+                        {
+                            data.map(user => (
+                                <div className="grid grid-cols-2 gap-1 my-6 border border-sky-950 rounded-xl items-center md:m-3" key={user.id}>
+                                    <div className="p-2">
+                                        <img className="border border-rose-900 rounded-full w-2/5 m-auto lg:w-2/6" src={imgProfile} alt="" />
+                                    </div>
+                                    <div className="text-center p-2">
+                                        <Link to='/user/1'>
+                                            <p className="p-1 truncate">
+                                                {user.name}
+                                            </p>
+                                        </Link>
+                                        <Link to='/user/1'>
+                                            <p className="p-1 truncate">
+                                                {user.lastName}
+                                            </p>
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                   
+                </article>
+            </section>
+            {/*  <div className="max-w-md border border-sky-500 rounded-full w-2/4 text-center text-lg m-auto">
                         <h1>Lista de usuarios</h1>
                     </div>
                     <div className="md:grid md:grid-cols-2 lg:grid-cols-3">
@@ -36,9 +65,7 @@ export const AllUsers = () => {
                             </div>
                         ))
                     }
-                    </div>
-                </article>
-            </section>
+                    </div> */}
             {/* <section className="max-w-sm border border-sky-500 rounded-full m-auto p-3 text-center text-2xl mb-10">
                 Lista de usuarios
             </section>

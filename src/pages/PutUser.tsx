@@ -40,7 +40,28 @@ export const PutUser = () => {
     
     return (
         <>
-            <div className="max-w-8xl mx-auto px-4 ">
+            <section className="max-w-8xl mx-auto px-4">
+                <article>
+                    <div className="text-center text-3xl">
+                        <h1>Cambios de usuario</h1>
+                    </div>
+                    <div>
+                        <form action="">
+                            <div>
+
+                                <input className="border border-sky-700 rounded-full pl-2 my-3 w-full p-3 text-2xl" type="text" placeholder="Nombre" />
+                                <input className="border border-sky-700 rounded-full pl-2 my-3 w-full p-3 text-2xl" type="text" placeholder="Apellido" />
+                                <input className="border border-sky-700 rounded-full pl-2 my-3 w-full p-3 text-2xl" type="text" placeholder="Email" />
+                            </div>
+                            <div className="grid grid-rows-2 gap-1">
+                                <button className="border border-sky-700 rounded-2xl p-3">Editar</button>
+                                <button className="border border-sky-700 rounded-2xl p-3">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+            {/* <div className="max-w-8xl mx-auto px-4 ">
                 <div className="border border-black">
                     adsasdasd
                 </div>
@@ -61,7 +82,7 @@ export const PutUser = () => {
                     <button className="button is-success" type="submit">Crear</button>
                     <button className="button is-danger" type="reset">Cancelar</button>
                 </div>
-            </form>
+            </form> */}
         </>
     )    
 }

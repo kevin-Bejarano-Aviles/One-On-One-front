@@ -13,7 +13,84 @@ export const OneUser = () => {
     return (
         <>{/* m-5 md:grid md:grid-cols-2 w-full */}
         {/*  m-5 md:max-w-3xl md:grid md:grid-cols-2 */}
-            <section className="">
+            <section className="max-w-8xl mx-auto px-4">
+                <article className="border border-sky-500 md:grid md:grid-cols-2 md:gap-1 md:items-center my-6 lg:w-2/4 lg:m-auto">
+                    <div className="my-5">
+                        <img className="border border-rose-900 rounded-full w-2/5 m-auto" src={imgProfile} alt="" />
+                    </div>
+                    <div>
+                        <div className="text-center m-4 p-2 text-2xl">
+                            <h2>Datos personales</h2>
+
+                        </div>
+                        <div className="p-2">
+                            <div className="grid grid-flow-col justify-between mx-5 text-lg">
+                                <span className="truncate">Nombre:</span>
+                                <span className="truncate">Kevin</span>
+                            </div>
+                            <div className="grid grid-flow-col justify-between mx-5 text-lg">
+                                <span className="truncate">Apellido:</span>
+                                <span className="truncate">Aviles</span>
+                            </div>
+                            <div className="grid grid-flow-col justify-between mx-5 text-lg">
+                                <span className="truncate">Email:</span>
+                                <span className="truncate">Undefined</span>
+                            </div>
+                        </div>
+                        <div className="text-center m-4 p-2 text-xl">
+                                <button className="border border-sky-500 rounded-full p-2">Editar datos</button>
+                        </div>
+                    </div>
+                </article>
+                <article className="md:grid md:grid-cols-2 md:gap-2 lg:w-2/4 lg:m-auto">
+                    <div className="border border-sky-500 my-6">
+                        <div className="text-center m-4 p-2 text-xl">
+                            <h2>Reunion con superiores</h2>
+                        </div>
+                        <div>
+                            <div className="grid grid-flow-col p-2 m-3 justify-between ">
+                                <span className="p-2 truncate w-full">Reu One on one kevin|oz </span>
+                                <button className="border border-sky-300 rounded-full p-2 ">Ver detalles</button>
+                            </div>
+                            <div className="grid grid-flow-col p-2 m-3 justify-between">
+                                <span className="p-2 truncate w-full">Reu One on one kevin|oz 112313123 </span>
+                                <button className="border border-sky-300 rounded-full p-2">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border border-sky-500 my-6">
+                        <div className="text-center m-4 p-2 text-xl">
+                            <h2>Reunion con subalternos</h2>
+                        </div>
+                        <div>
+                            <div className="grid grid-flow-col p-2 m-3 justify-between ">
+                                <span className="p-2 truncate w-full">Reu One on one kevin|oz </span>
+                                <button className="border border-sky-300 rounded-full p-2 ">Ver detalles</button>
+                            </div>
+                            <div className="grid grid-flow-col p-2 m-3 justify-between">
+                                <span className="p-2 truncate w-full">Reu One on one kevin|oz 112313123 </span>
+                                <button className="border border-sky-300 rounded-full p-2">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border border-sky-500 my-6">
+                        <div className="text-center m-4 p-2 text-xl">
+                            <h2>Tus accionables</h2>
+                        </div>
+                        <div>
+                            <div className="grid grid-flow-col p-2 m-3 justify-between ">
+                                <span className="p-2 truncate w-full">Reu One on one kevin|oz </span>
+                                <button className="border border-sky-300 rounded-full p-2 ">Ver detalles</button>
+                            </div>
+                            <div className="grid grid-flow-col p-2 m-3 justify-between">
+                                <span className="p-2 truncate w-full">Reu One on one kevin|oz 112313123 </span>
+                                <button className="border border-sky-300 rounded-full p-2">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            {/* <section className="">
                 <article className="max-w-md border border-sky-500 m-5 md:max-w-4xl md:grid md:grid-cols-2 lg:max-w-4xl lg:m-auto xl:max-w-6xl">
                         <div className="w-full">
                             <div className="my-5">
@@ -103,7 +180,7 @@ export const OneUser = () => {
 
                     </article>
                 </div>
-            </section>
+            </section> */}
             {/* <section className="flex flex-col items-center">
                 <article className="border border-sky-500 max-w-md w-2/3  flex flex-col items-center my-14 md:flex-row md:w-full md:max-w-xl">    
                 <div className="w-2/3 m-2 flex p-4 md:w-2/5">
